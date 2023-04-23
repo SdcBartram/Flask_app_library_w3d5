@@ -3,15 +3,15 @@
 {% block content %}
 <h3 class="sub_heading">Book Details</h3>
 
-            <div class="book">
-                <h2>{{book.title}}</h2>
-                <h3>{{book.author}}</h3>
-                <h3>{{book.genre}}</h3>
+<div class="book">
+    <h2>{{book.title}}</h2>
+    <h3>{{book.author}}</h3>
+    <h3>{{book.genre}}</h3>
 
-                {% if book.checked_out %}
-                <p><i>Checked out</i></p>
-                {% endif %}
+    {% if book.checked_out %}
+    <p><i>Checked out</i></p>
+    {% endif %}
 
-            </div>
+</div>
 
 {% endblock %}

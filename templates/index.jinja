@@ -1,45 +1,45 @@
 {% extends "base.jinja" %}
 
 {% block content %}
-<h1>BARTS BOOKS</h1>
+<h1>Leondale Library</h1>
 
 <h2 class="sub_heading">Add a book to the library:</h2>
 
-    <form class="form_input" action="/books" method="post">
-        <label for="title">Book Title</label>
-        <input class="input_text" type="text" name="title" id="title">
-        <label for="author">Author</label>
-        <input class="input_text" type="text" name="author" id="author">
-        <label for="genre">Genre</label>
-        <input class="input_text" type="text" name="genre" id="genre">
-        <div>
-            <label for="checked_out">Checked out</label>
-            <input type="checkbox" name="checked_out" id="checked_out">
-        </div>
-        <input class="submit_button" type="submit" value="Submit">
-    </form>
+<form class="form_input" action="/books" method="post">
+    <label for="title">Book Title</label>
+    <input class="input_text" type="text" name="title" id="title">
+    <label for="author">Author</label>
+    <input class="input_text" type="text" name="author" id="author">
+    <label for="genre">Genre</label>
+    <input class="input_text" type="text" name="genre" id="genre">
+    <div>
+        <label for="checked_out">Checked out</label>
+        <input type="checkbox" name="checked_out" id="checked_out">
+    </div>
+    <input class="submit_button" type="submit" value="Submit">
+</form>
 
-    <h2 class="sub_heading">All Books</h2>
+<h2 class="sub_heading">All Books</h2>
 
-        <div class="book_container">
-            {% for book in books %}
-            <div class="book">
-                <h2> <a href="books/{{books.index(book)}}">{{book.title}}</a> </h2>
-                <h3>{{book.author}}</h3>
-                <h3>{{book.genre}}</h3>
+<div class="book_container">
+    {% for book in books %}
+    <div class="book">
+        <h2> <a href="books/{{books.index(book)}}">{{book.title}}</a> </h2>
+        <h3>{{book.author}}</h3>
+        <h3>{{book.genre}}</h3>
 
-                {% if book.checked_out %}
-                <p><i>Checked out</i></p>
-                {% endif %}
+        {% if book.checked_out %}
+        <p><i>Checked out</i></p>
+        {% endif %}
 
-                
-                <form class="delete_book" action="/books/delete/{{ book.title }}" method="POST">
-                    <input class="submit_button" type="submit" value="Delete">
-                
-                </form>
-            
-            </div>
-            {% endfor %}
-        </div>
 
-        {% endblock %}
+        <form class="delete_book" action="/books/delete/{{ book.title }}" method="POST">
+            <input class="submit_button" type="submit" value="Delete">
+
+        </form>
+
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

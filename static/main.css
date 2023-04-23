@@ -69,3 +69,10 @@ body a {
 body a:hover {
     font-size: larger;
 }
+
+.book {
+    color: #E8D5C4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
