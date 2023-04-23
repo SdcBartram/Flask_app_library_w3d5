@@ -1,0 +1,16 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Libre Baskerville'>
+
+      <title>{{ title }} - Barts Books </title>
+    </head>
+    <body>
+        <ul>
+          <li class="navLink"><a href="/books">Home</a></li>
+        </ul>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

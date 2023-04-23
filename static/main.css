@@ -1,0 +1,71 @@
+body {
+    font-family: "Libre Baskerville";
+    background-color: #3A98B9;
+}
+
+h1 {
+    color: #EEEEEE;
+    font-family: "Sofia", sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+.sub_heading {
+    color: #EEEEEE;
+    font-family: "Sofia", sans-serif;
+    font-size: 50px;
+    text-align: left;
+
+}
+
+.navLink {
+    list-style-type: none;
+    font-weight: bold;
+    color: #E8D5C4;
+    display: inline;
+    padding-right: 5%;
+}
+
+.navLink a {
+    color: #EEEEEE;
+}
+
+.navLink:hover {
+    font-size: larger;
+}
+
+.form_input {
+    display: flex;
+    justify-content: space-between;
+    color: #E8D5C4;
+    margin: 15px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.input_text {
+    width: 20%;
+    padding: 5px;
+}
+
+.book_container {
+    color: #E8D5C4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.submit_button {
+    border-radius: 45%;
+    background-color: #E8D5C4;
+    font-size: large;
+}
+
+body a {
+    color: #E8D5C4;
+    text-decoration: none;
+}
+
+body a:hover {
+    font-size: larger;
+}
