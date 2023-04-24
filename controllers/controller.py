@@ -6,7 +6,7 @@ from models.Book import *
 
 @app.route('/books')
 def index():
-    return render_template('index.jinja', title='Barts Books', books=books)
+    return render_template('index.jinja', title='Leondale Library', books=books)
 
 
 @app.route('/books', methods=['POST'])

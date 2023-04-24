@@ -48,7 +48,7 @@ h1 {
     padding: 5px;
 }
 
-.book_container {
+.book_container div {
     color: #E8D5C4;
     display: flex;
     flex-wrap: wrap;
@@ -75,4 +75,8 @@ body a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer {
+
 }
