@@ -23,9 +23,17 @@
 <div class="book_container">
     {% for book in books %}
     <div class="book">
-        <h2> <a href="books/{{books.index(book)}}">{{book.title}}</a> </h2>
-        <h3>{{book.author}}</h3>
-        <h3>{{book.genre}}</h3>
+        <ul>
+            <li>
+                <a href="books/{{books.index(book)}}">{{book.title}}</a>
+            </li>
+            <li>
+                {{book.author}}
+            </li>
+            <li>
+                {{book.genre}}
+            </li>
+        </ul>
 
         {% if book.checked_out %}
         <p><i>Checked out</i></p>

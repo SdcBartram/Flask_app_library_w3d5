@@ -34,6 +34,10 @@ h1 {
     font-size: larger;
 }
 
+.book ul li {
+    list-style: none;
+}
+
 .form_input {
     display: flex;
     justify-content: space-between;
@@ -48,7 +52,7 @@ h1 {
     padding: 5px;
 }
 
-.book_container {
+.book_container div {
     color: #E8D5C4;
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +61,8 @@ h1 {
 }
 
 .submit_button {
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 45%;
     background-color: #E8D5C4;
     font-size: large;
@@ -71,14 +77,22 @@ body a:hover {
     font-size: larger;
 }
 
-/* .book {
+.book div {
     color: #E8D5C4;
     display:flex;
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom:2rem; */
-/* } */
+    padding-bottom:2rem;
+}
+
+.book {
+    color: #E8D5C4;
+}
+.book p i {
+    color: #E8D5C4;
+    
+}
 
 footer {
     color: #E8D5C4;
