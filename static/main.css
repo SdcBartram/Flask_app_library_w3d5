@@ -48,11 +48,12 @@ h1 {
     padding: 5px;
 }
 
-.book_container div {
+.book_container {
     color: #E8D5C4;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-bottom:2rem;
 }
 
 .submit_button {
@@ -70,13 +71,16 @@ body a:hover {
     font-size: larger;
 }
 
-.book {
+/* .book {
     color: #E8D5C4;
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between;
     align-items: center;
-}
+    padding-bottom:2rem; */
+/* } */
 
 footer {
-
+    color: #E8D5C4;
+    text-align: center;
 }
